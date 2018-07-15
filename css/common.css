@@ -15,7 +15,7 @@ body, html {
   font-family: "Nanum Gothic", sans-serif;
   width: 960px;
   margin: 0 auto;
-  background: #f2f4f7;
+  background: #fae100;
   height: 56px;
   padding-bottom: 20px;
 }
@@ -46,9 +46,8 @@ body, html {
   }
 }
 
-.logo-top {
-  display: block;
-  margin-bottom: -8px;
+.uk-navbar-container:not(.uk-navbar-transparent) ul {
+  margin-left: 15px;
 }
 
 .logo {
@@ -63,7 +62,7 @@ body, html {
 }
 
 .content-div {
-  padding-top: 60px;
+  padding-top: 25px;
 }
 
 .content-text-title {
@@ -76,11 +75,45 @@ body, html {
   font-size: 15px;
 }
 
-.slide-div-text {
-  height: 200px;
+.content-about-me {
+  font-family: "Open Sans", sans-serif;
+  font-weight: blod;
 }
 
-.uk-div {
+.about-me-img {
+  margin: 35px 0;
+  width: 250px;
+  height: 250px;
+}
+
+.about-me-title {
+  font-family: 'BM HANNA 11yrs old';
+  font-size: 24px;
+  color: black;
+}
+
+.about-me-imgs {
+  width: 150px;
+  height: 150px;
+  float: right;
+}
+
+.about-me-intro {
+  margin: 10px 0;
+}
+
+.about-me-detail {
+  margin: 10px 0;
+}
+
+.about-me-index {
+  font-family: 'BM HANNA 11yrs old';
+  font-size: 1.0em;
+  margin: 0.3em 0;
+  color: black;
+}
+
+.slideshow-div {
   height: 100%;
 }
 
@@ -95,6 +128,7 @@ body, html {
 }
 
 .slide-div {
+  padding-bottom: 3.1em;
   background: #fae100;
 }
 
