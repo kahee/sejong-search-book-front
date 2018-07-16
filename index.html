@@ -10,28 +10,57 @@
   <link rel="stylesheet" href="css/uikit.css">
   <link rel="stylesheet" href="css/swiper.min.css">
 
+
+
   <script src="js/swiper.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
   <script src="js/uikit.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <title>Sejong Search Book</title>
 </head>
 
 <body>
   <header class="header">
-    <nav class="uk-navbar-container nav-container" uk-navbar="">
-      <div class="uk-navbar-left nav-menu"><img src="images/menu.png" alt=""></div>
+    <div class="header-nav">
+      <div class="hamburger_bar">
+        <div class="nav_bar1"></div>
+        <div class="nav_bar2"></div>
+        <div class="nav_bar3"></div>
+      </div>
       <p>세종대 도서 검색</p>
       <div class="uk-navbar-right nav-friend"><img src="images/friend.png" alt=""></div>
+    </div>
 
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+      </ul>
     </nav>
-      <div class=''>asdfasdfsafsdfsdfasdfsa</div>
-  </header>
 
-  <!--
-  <div class="content slide-div">
-  <div class="logo">세종대 도서 검색</div>
-  <div class="logo logo-bottom">플러스 친구</div>
+  </nav>
+</header>
+<script>
+//OPEN NAV ON HAMBURGUER CLICK
+  $(".hamburger_bar").click(function(){
+  $("nav").toggleClass("open");
+  $(this).toggleClass("toggle");
+});
+
+
+</script>
+
+<!--
+<div class="content slide-div">
+<div class="logo">세종대 도서 검색</div>
+<div class="logo logo-bottom">플러스 친구</div>
 </div> -->
 
 <div class="content slide-div">
@@ -77,6 +106,7 @@
 </div>
 <!-- Initialize Swiper -->
 <script>
+
 var swiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
