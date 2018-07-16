@@ -15,7 +15,14 @@ body,html {
   font-family: $font-Nanum;
 }
 
+
 .header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 2;
+  z-index: 2;
   color: #666;
   font-family:  $font-Nanum;
   width: 960px;
@@ -23,6 +30,24 @@ body,html {
   background: $backgroud-yellow;
   height: 45px;
   padding: 15px 0;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+
+  div {
+    display: inline-block;
+  }
+}
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
 .content {
@@ -43,13 +68,13 @@ body,html {
 
 @media(max-width:960px) {
   .header {
-    width: 90%;
+    width: 100%;
   }
   .content {
-    width: 90%;
+    width: 100%;
   }
   .footer {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -127,6 +152,7 @@ body,html {
 
 // 세종대 도서 검색 플러스 친구 문구
 .slide-div {
+  margin-top: 75px;
   padding-bottom: 25px;
   background:$backgroud-yellow;
 }
@@ -136,12 +162,16 @@ body,html {
   margin-top: 20px;
 }
 
+.video-content {
+  height: 800px;
+}
+
+
 .swiper-page-div {
   .swiper-pagination-bullet {
     margin: 0 10px;
   }
 }
-
 
 .swiper-div {
   text-align: center;

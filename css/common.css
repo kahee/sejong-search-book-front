@@ -11,6 +11,12 @@ body, html {
 }
 
 .header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 2;
+  z-index: 2;
   color: #666;
   font-family: "Nanum Gothic", sans-serif;
   width: 960px;
@@ -18,6 +24,26 @@ body, html {
   background: #fae100;
   height: 45px;
   padding: 15px 0;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav div {
+  display: inline-block;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
 .content {
@@ -36,13 +62,13 @@ body, html {
 
 @media (max-width: 960px) {
   .header {
-    width: 90%;
+    width: 100%;
   }
   .content {
-    width: 90%;
+    width: 100%;
   }
   .footer {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -114,6 +140,7 @@ body, html {
 }
 
 .slide-div {
+  margin-top: 75px;
   padding-bottom: 25px;
   background: #fae100;
 }
@@ -121,6 +148,10 @@ body, html {
 .slide-img {
   bottom: 0px;
   margin-top: 20px;
+}
+
+.video-content {
+  height: 800px;
 }
 
 .swiper-page-div .swiper-pagination-bullet {

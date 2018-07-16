@@ -1,0 +1,44 @@
+.div-1 {
+  background: yellow;
+  text-align: center;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav div {
+  display: inline-block;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: blue;
+  color: black;
+}

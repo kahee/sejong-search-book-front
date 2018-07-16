@@ -14,113 +14,165 @@
   <script src="js/uikit-icons.min.js"></script>
   <script src="js/uikit.js"></script>
 
-  <title>kahee Project Sample</title>
+  <title>Sejong Search Book</title>
 </head>
 
 <body>
+
   <header class="header">
-    <nav class="uk-navbar-container uk-navbar " uk-navbar="">
+
+    <nav class="uk-navbar-container topnav" uk-navbar="">
+      <span class="uk-navbar-right">
+        <img src="images/friend.png" alt="" class="uk-margin-small-right">
+      </span>
+      <div class=uk-navber-center>세종대 도서 검색</div>
       <div class="uk-navbar-left">
-        <ul class="uk-navbar-nav">
-          <li>
-            <span aria-expanded="false">
-              <img src="images/menu.png" alt="">
-            </span>
-            <!-- <a href="#" class="" aria-expanded="false">Parent</a> -->
-            <div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left" style="top: 80px; left: 134px;">
-              <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li class="uk-nav-header">menu</li>
-                <li><a href="#">소개 페이지</a></li>
-                <li><a href="#">소개 영상</a></li>
-                <li><a href="#">Item</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#">about me</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+        <a href="javascript:void(0);" onclick="myFunction()">
+          <span class="uk-navbar-left">
+            <img src="images/friend.png" alt="" class="uk-margin-small-right">
+          </span>
+        </a>
+        <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
 
       </div>
-
-      <div class="uk-navbar-right">
-        <span>
-          <img src="images/friend.png" alt="" class="uk-margin-small-right">
-        </span>
-      </div>
-
     </nav>
 
   </header>
 
-  <div class="content slide-div">
-    <div class="logo">세종대 도서 검색</div>
-    <div class="logo logo-bottom">플러스 친구</div>
-  </div>
-
-  <div class="content slide-div">
-      <!-- Swiper -->
-      <div class="swiper-container swiper-div">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="slide-div-text">
-              <div class="content-div">
-                <div class="content-text-title">접근을 편리하게</div>
-                <div class="context-text-context">학교 사이트에 접속하지 않고</div>
-                <div class="context-text-context">카카오톡에서 도서검색을 해보세요.</div>
-              </div>
-            </div>
-            <img src="images/phone1_png.png" alt="">
-          </div>
-
-          <div class="swiper-slide">
-            <div class="slide-div-text">
-              <div class="content-div">
-                <div class="content-text-title">접근을 편리하게</div>
-                <div class="context-text-context">학교 사이트에 접속하지 않고</div>
-                <div class="context-text-context">카카오톡에서 도서검색을 해보세요.</div>
-              </div>
-            </div>
-            <img src="images/phone2_png.png" alt="">
-          </div>
-
-          <div class="swiper-slide">
-            <div class="slide-div-text">
-              <div class="content-div">
-                <div class="content-text-title">접근을 편리하게</div>
-                <div class="context-text-context">학교 사이트에 접속하지 않고</div>
-                <div class="context-text-context">카카오톡에서 도서검색을 해보세요.</div>
-              </div>
-            </div>
-            <img src="images/phone3_png.png" alt="">
-          </div>
-        </div>
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination swiper-page-div"></div>
-  </div>
-  <!-- Initialize Swiper -->
   <script>
-  var swiper = new Swiper('.swiper-container', {
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  });
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
   </script>
 
-  <div class="content">
-    <img src="images/about_me.jpg"  class="uk-border-circle about-me-img"  alt="">
-    <div class="about-me-title">ABOUT ME</div>
-    <div class="about-me-intro">
-      <div class="about-me-context">UIkit offers some advanced components that are not included in the UIkit core framework. Usually you wouldn't use these components in your everyday website. They include stuff like nestables and datepickers, which will come in handy, if you create advanced user interfaces like administration areas.
+  <!-- <header class="header" >
+  <nav class="uk-navbar-container" uk-navbar="">
+  <div class="uk-navbar-left">
+  <ul class=" uk-nav-default uk-nav" uk-nav>
+  <li class="uk-parent">
+  <a href=""><span uk-navbar-toggle-icon></span>
+  <ul class="uk-nav-sub">
+  <li><a href="#">Sub item</a></li>
+  <li><a href="#">Sub item</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="uk-navber-center">세종대 도서 검색</div>
+<span class="uk-navbar-right">
+<img src="images/friend.png" alt="" class="uk-margin-small-right">
+</span>
+</nav>
+</header> -->
+
+<!--
+<div class="content slide-div">
+<div class="logo">세종대 도서 검색</div>
+<div class="logo logo-bottom">플러스 친구</div>
+</div> -->
+
+<div class="content slide-div">
+  <!-- Swiper -->
+  <div class="swiper-container swiper-div">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-div-text">
+          <div class="content-div">
+            <div class="content-text-title">접근을 편리하게</div>
+            <div class="context-text-context">학교 사이트에 접속하지 않고</div>
+            <div class="context-text-context">카카오톡에서 도서검색을 해보세요.</div>
+          </div>
+        </div>
+        <img src="images/phone1_png.png" alt="">
+      </div>
+
+      <div class="swiper-slide">
+        <div class="slide-div-text">
+          <div class="content-div">
+            <div class="content-text-title">접근을 편리하게</div>
+            <div class="context-text-context">학교 사이트에 접속하지 않고</div>
+            <div class="context-text-context">카카오톡에서 도서검색을 해보세요.</div>
+          </div>
+        </div>
+        <img src="images/phone2_png.png" alt="">
+      </div>
+
+      <div class="swiper-slide">
+        <div class="slide-div-text">
+          <div class="content-div">
+            <div class="content-text-title">접근을 편리하게</div>
+            <div class="context-text-context">학교 사이트에 접속하지 않고</div>
+            <div class="context-text-context">카카오톡에서 도서검색을 해보세요.</div>
+          </div>
+        </div>
+        <img src="images/phone3_png.png" alt="">
       </div>
     </div>
-    <div class="about-me-detail">
-      <div class="about-me-index">EDUCATION / CAREEAR</div>
-    </div>
-    <div>
-      <div class="about-me-index">SKILL</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination swiper-page-div"></div>
+</div>
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper('.swiper-container', {
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
+</script>
+
+
+<div class="content video.content">
+  비디오 영상
+</div>
+<div class="content">
+  <img src="images/about_me.jpg"  class="uk-border-circle about-me-img"  alt="">
+  <div class="about-me-title">ABOUT ME</div>
+  <div class="about-me-intro">
+    <div class="about-me-context">UIkit offers some advanced components that are not included in the UIkit core framework. Usually you wouldn't use these components in your everyday website. They include stuff like nestables and datepickers, which will come in handy, if you create advanced user interfaces like administration areas.
     </div>
   </div>
+  <div class="about-me-detail">
+    <div class="about-me-index">EDUCATION / CAREEAR</div>
+  </div>
+  <div>
+    <div class="about-me-index">SKILL</div>
+  </div>
+</div>
+
+<div class="uk-card uk-card-default uk-card-body uk-width-1-2@s">
+  <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+    <li class="uk-active"><a href="#">Active</a></li>
+    <li class="uk-parent">
+      <a href="#">Parent</a>
+      <ul class="uk-nav-sub">
+        <li><a href="#">Sub item</a></li>
+        <li><a href="#">Sub item</a></li>
+      </ul>
+    </li>
+    <li class="uk-parent">
+      <a href="#">Parent</a>
+      <ul class="uk-nav-sub">
+        <li><a href="#">Sub item</a></li>
+        <li><a href="#">Sub item</a></li>
+      </ul>
+    </li>
+    <li class="uk-nav-header">Header</li>
+    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+    <li class="uk-nav-divider"></li>
+    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+  </ul>
+</div>
 
 </body>
 
