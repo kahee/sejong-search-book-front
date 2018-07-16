@@ -28,34 +28,39 @@ body,html {
   width: 960px;
   margin: 0 auto;
   background: $backgroud-yellow;
-  height: 45px;
-  padding: 15px 0;
+  height: 55px;
+  padding: 10px 0;
 }
 // .header:hover {
 //   opacity : .5;
 //   width: 500px;
 // }
+.nav-container {
+  font-family:$font-Naum-m;
+  font-size: 18px;
+  font-weight: bolder;
+  color: black;
 
+  p {
+     margin: 0;
+     line-height: 40px;
+     padding-right: 10px;
+  }
+
+}
 .nav-menu {
   padding-left: 10px;
 }
 .nav-friend {
   padding-right: 10px;
 }
+
 .content {
   text-align:center;
   width: 960px;
   margin: 0 auto;
   background: $backgroud-gray;
 }
-
-.footer {
-  width: 960px;
-  margin: 0 auto;
-  background: #333;
-  height: 56px;
-}
-
 
 @media(max-width:960px) {
   .header {
@@ -69,14 +74,11 @@ body,html {
   }
 }
 
-
 .uk-navbar-container:not(.uk-navbar-transparent) {
   ul {
     margin-left: 15px
   }
 }
-
-
 
 .logo {
   color: black;
