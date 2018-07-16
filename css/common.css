@@ -16,7 +16,6 @@ body, html {
   left: 0px;
   right: 0px;
   z-index: 2;
-  z-index: 2;
   color: #666;
   font-family: "Nanum Gothic", sans-serif;
   width: 960px;
@@ -26,24 +25,12 @@ body, html {
   padding: 15px 0;
 }
 
-.topnav {
-  overflow: hidden;
-  position: relative;
+.nav-menu {
+  padding-left: 10px;
 }
 
-.topnav div {
-  display: inline-block;
-}
-
-.topnav #myLinks {
-  display: none;
-}
-
-.topnav a {
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
+.nav-friend {
+  padding-right: 10px;
 }
 
 .content {

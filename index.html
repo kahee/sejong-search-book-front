@@ -18,66 +18,18 @@
 </head>
 
 <body>
-
   <header class="header">
+    <nav class="uk-navbar-container" uk-navbar="">
+      <div class="uk-navbar-left nav-menu"><img src="images/menu.png" alt=""></div>
+      <div class="uk-navbar-right nav-friend"><img src="images/friend.png" alt=""></div>
 
-    <nav class="uk-navbar-container topnav" uk-navbar="">
-      <span class="uk-navbar-right">
-        <img src="images/friend.png" alt="" class="uk-margin-small-right">
-      </span>
-      <div class=uk-navber-center>세종대 도서 검색</div>
-      <div class="uk-navbar-left">
-        <a href="javascript:void(0);" onclick="myFunction()">
-          <span class="uk-navbar-left">
-            <img src="images/friend.png" alt="" class="uk-margin-small-right">
-          </span>
-        </a>
-        <div id="myLinks">
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-        </div>
-
-      </div>
     </nav>
-
   </header>
 
-  <script>
-  function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-  </script>
-
-  <!-- <header class="header" >
-  <nav class="uk-navbar-container" uk-navbar="">
-  <div class="uk-navbar-left">
-  <ul class=" uk-nav-default uk-nav" uk-nav>
-  <li class="uk-parent">
-  <a href=""><span uk-navbar-toggle-icon></span>
-  <ul class="uk-nav-sub">
-  <li><a href="#">Sub item</a></li>
-  <li><a href="#">Sub item</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="uk-navber-center">세종대 도서 검색</div>
-<span class="uk-navbar-right">
-<img src="images/friend.png" alt="" class="uk-margin-small-right">
-</span>
-</nav>
-</header> -->
-
-<!--
-<div class="content slide-div">
-<div class="logo">세종대 도서 검색</div>
-<div class="logo logo-bottom">플러스 친구</div>
+  <!--
+  <div class="content slide-div">
+  <div class="logo">세종대 도서 검색</div>
+  <div class="logo logo-bottom">플러스 친구</div>
 </div> -->
 
 <div class="content slide-div">
@@ -147,31 +99,6 @@ var swiper = new Swiper('.swiper-container', {
   <div>
     <div class="about-me-index">SKILL</div>
   </div>
-</div>
-
-<div class="uk-card uk-card-default uk-card-body uk-width-1-2@s">
-  <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-    <li class="uk-active"><a href="#">Active</a></li>
-    <li class="uk-parent">
-      <a href="#">Parent</a>
-      <ul class="uk-nav-sub">
-        <li><a href="#">Sub item</a></li>
-        <li><a href="#">Sub item</a></li>
-      </ul>
-    </li>
-    <li class="uk-parent">
-      <a href="#">Parent</a>
-      <ul class="uk-nav-sub">
-        <li><a href="#">Sub item</a></li>
-        <li><a href="#">Sub item</a></li>
-      </ul>
-    </li>
-    <li class="uk-nav-header">Header</li>
-    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
-    <li class="uk-nav-divider"></li>
-    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
-  </ul>
 </div>
 
 </body>
