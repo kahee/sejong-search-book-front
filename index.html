@@ -20,27 +20,25 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="header-nav">
-      <div class="hamburger_bar">
-        <div class="nav_bar1"></div>
-        <div class="nav_bar2"></div>
-        <div class="nav_bar3"></div>
+  <header class="header ">
+    <div class="header-nav middle-child  clearfix">
+      <div class="hamburger_bar ">
+        <img src="images/menu.png" alt="">
       </div>
-      <p>세종대 도서 검색</p>
-      <div class="uk-navbar-right nav-friend"><img src="images/friend.png" alt=""></div>
+      <div class="nav-friend middle-child  clearfix"><img src="images/friend.png" alt=""></div>
+
     </div>
 
     <nav>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="#">Introduction</a>
         </li>
         <li>
-          <a href="#">Home</a>
+          <a href="#">Introduction Video</a>
         </li>
         <li>
-          <a href="#">Home</a>
+          <a href="">About me</a>
         </li>
       </ul>
     </nav>
@@ -49,7 +47,7 @@
 </header>
 <script>
 //OPEN NAV ON HAMBURGUER CLICK
-  $(".hamburger_bar").click(function(){
+$(".hamburger_bar").click(function(){
   $("nav").toggleClass("open");
   $(this).toggleClass("toggle");
 });

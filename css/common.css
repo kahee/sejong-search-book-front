@@ -25,6 +25,10 @@ body, html {
   padding: 10px 0;
 }
 
+.header-nav {
+  height: 100%;
+}
+
 .nav-container {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -32,13 +36,8 @@ body, html {
   color: black;
 }
 
-.nav-container p {
-  margin: 0;
-  line-height: 40px;
-  padding-right: 10px;
-}
-
 .hamburger_bar {
+  margin-left: 10px;
   position: absolute;
   outline: none;
   left: 0;
@@ -51,27 +50,31 @@ body, html {
 }
 
 .hamburger_bar .nav_bar1, .hamburger_bar .nav_bar2, .hamburger_bar .nav_bar3 {
-  width: 22px;
-  height: 3px;
+  width: 30px;
+  height: 5px;
+  border-radius: 100px;
   background-color: black;
   margin: 3px 0;
   transition-duration: 0.4s;
 }
 
-.toggle .nav_bar1 {
-  transform: rotate(-45deg) translate(-1px, 1px);
-  -webkit-transform: rotate(-45deg) translate(-1px, 1px);
-  background: blue;
+.middle-parent::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: -0.25em;
 }
 
-.toggle .nav_bar2 {
-  opacity: 0;
+.middle-child {
+  vertical-align: middle;
 }
 
-.toggle .nav_bar3 {
-  transform: rotate(45deg) translate(-8px, -8px);
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  background: white;
+.clearfix::after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
 }
 
 nav {
@@ -91,7 +94,6 @@ nav ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  padding-top: 100px;
   text-align: center;
   list-style: none;
 }
@@ -106,9 +108,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: white;
+  background: gray;
   cursor: pointer;
-  color: #306db6;
+  color: black;
 }
 
 .open {
@@ -116,11 +118,9 @@ nav ul li a:hover {
   opacity: 1;
 }
 
-.nav-menu {
-  padding-left: 10px;
-}
-
 .nav-friend {
+  padding-top: 0.1em;
+  float: right;
   padding-right: 10px;
 }
 
