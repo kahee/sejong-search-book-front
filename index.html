@@ -9,9 +9,6 @@
   <link rel="stylesheet" href="css/uikit-rtl.min.css">
   <link rel="stylesheet" href="css/uikit.css">
   <link rel="stylesheet" href="css/swiper.min.css">
-
-
-
   <script src="js/swiper.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
   <script src="js/uikit.js"></script>
@@ -20,90 +17,136 @@
 </head>
 
 <body>
-  <header class="header ">
+  <header class="header">
     <div class="header-nav middle-child  clearfix">
-      <div class="hamburger_bar ">
+      <div class="hamburgerBar ">
         <img src="images/menu.png" alt="">
       </div>
-      <div class="nav-friend middle-child  clearfix"><img src="images/friend.png" alt=""></div>
-
+      <a href="http://pf.kakao.com/_YFgWC/"><div class="nav-friend middle-child  clearfix"><img src="images/friend.png" alt=""></div></a>
     </div>
-
     <nav>
       <ul>
         <li>
-          <a href="#">Introduction</a>
+          <a href="#" id="introduction">Introduction</a>
         </li>
         <li>
-          <a href="#">Introduction Video</a>
+          <a href="#" id="introductionVideo">Introduction Video</a>
         </li>
         <li>
-          <a href="">About me</a>
+          <a href="#" id="aboutMe">About me</a>
         </li>
       </ul>
     </nav>
+  </header>
 
-  </nav>
-</header>
-<script>
-//OPEN NAV ON HAMBURGUER CLICK
-$(".hamburger_bar").click(function(){
-  $("nav").toggleClass("open");
-  $(this).toggleClass("toggle");
-});
-
-
-</script>
-
-<!--
-<div class="content slide-div">
-<div class="logo">세종대 도서 검색</div>
-<div class="logo logo-bottom">플러스 친구</div>
-</div> -->
-
-<div class="content slide-div">
-  <!-- Swiper -->
-  <div class="swiper-container swiper-div">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="slide-div-text">
-          <div class="content-div">
-            <div class="content-text-title">접근을 편리하게</div>
-            <div class="context-text-context">학교 사이트에 접속하지 않고</div>
-            <div class="context-text-context">카카오톡에서 도서검색을 해보세요.</div>
+  <div class="content slide-div" >
+    <!-- Swiper -->
+    <div class="swiper-container swiper-div">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide-div-text">
+            <div class="content-div">
+              <div class="content-text-title">접근을 편리하게</div>
+              <div class="context-text-context">학교 사이트에 접속하지 않고</div>
+              <div class="context-text-context">카카오톡으로 도서검색을 해보세요.</div>
+            </div>
           </div>
+          <img src="images/phone1_png.png" alt="">
         </div>
-        <img src="images/phone1_png.png" alt="">
-      </div>
 
-      <div class="swiper-slide">
-        <div class="slide-div-text">
-          <div class="content-div">
-            <div class="content-text-title">접근을 편리하게</div>
-            <div class="context-text-context">학교 사이트에 접속하지 않고</div>
-            <div class="context-text-context">카카오톡에서 도서검색을 해보세요.</div>
+        <div class="swiper-slide">
+          <div class="slide-div-text">
+            <div class="content-div">
+              <div class="content-text-title">검색을 편리하게</div>
+              <div class="context-text-context">책 제목으로</div>
+              <div class="context-text-context">원하는 도서 결과를 받아보세요.</div>
+            </div>
           </div>
+          <img src="images/phone3_png.png" alt="">
         </div>
-        <img src="images/phone2_png.png" alt="">
-      </div>
 
-      <div class="swiper-slide">
-        <div class="slide-div-text">
-          <div class="content-div">
-            <div class="content-text-title">접근을 편리하게</div>
-            <div class="context-text-context">학교 사이트에 접속하지 않고</div>
-            <div class="context-text-context">카카오톡에서 도서검색을 해보세요.</div>
+        <div class="swiper-slide">
+          <div class="slide-div-text">
+            <div class="content-div">
+              <div class="content-text-title">검색을 자세하게</div>
+              <div class="context-text-context">원하는 도서 정보가 없으신가요?</div>
+              <div class="context-text-context">제목, 출판사, 저자검색을 활용해보세요.</div>
+            </div>
           </div>
+          <img src="images/phone2_png.png" alt="">
         </div>
-        <img src="images/phone3_png.png" alt="">
       </div>
     </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-page-div"></div>
   </div>
-  <!-- Add Pagination -->
-  <div class="swiper-pagination swiper-page-div"></div>
-</div>
-<!-- Initialize Swiper -->
+
+  <div class="content video-content">
+    <div class="video-title">이제 편하게 도서검색하세요</div>
+    <div class="video-plus-friend">
+      <a href="http://pf.kakao.com/_YFgWC/chat">플러스친구 추가하기</a>
+    </div>
+
+    <div class="video-div">
+      <iframe width="100%" height="480" src="https://www.youtube.com/embed/jy_UiIQn_d0?list=RDjy_UiIQn_d0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="content" >
+    <img src="images/about_me.jpg"  class="uk-border-circle about-me-img"  alt="">
+    <div class="about-me-title">ABOUT ME</div>
+    <div class="about-me-intro">
+      <div class="about-me-context">
+        Backend Junior Developer
+      </div>
+    </div>
+    <div class="about-me-detail">
+      <div class="about-me-index">EDUCATION / CAREEAR</div>
+      세종대 경영학 / 컴퓨터공학 전공
+    </div>
+    <div>
+      <div class="about-me-index">SKILL</div>
+      Django
+      Linux
+      Python / C / Java/ SQL
+      AWS
+      Docker
+    </div>
+  </div>
+</body>
+
 <script>
+
+var introduction =  document.getElementById("introduction")
+var introductionVideo = document.getElementById("introductionVideo")
+var aboutMe = document.getElementById("aboutMe")
+var hamburgerBar = document.getElementsByClassName("hamburgerBar");
+var nav =   document.getElementsByTagName("nav");
+
+function closeNav() {
+  if (nav.classList) {
+    nav.classList.remove("open");
+    nav.classList.toggle("close");
+  }
+}
+console.log(nav)
+console.log(introduction)
+console.log(introductionVideo)
+console.log(aboutMe)
+introduction.addEventListener("click", function(){
+    window.scrollTo(0 ,500);
+  closeNav();
+
+});
+introductionVideo.addEventListener("click", function(){
+    window.scrollTo(0, 700);
+  closeNav();
+
+});
+
+$(".hamburgerBar").click(function(){
+  $("nav").toggleClass("open");
+});
 
 var swiper = new Swiper('.swiper-container', {
   pagination: {
@@ -111,26 +154,5 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 </script>
-
-
-<div class="content video.content">
-  비디오 영상
-</div>
-<div class="content">
-  <img src="images/about_me.jpg"  class="uk-border-circle about-me-img"  alt="">
-  <div class="about-me-title">ABOUT ME</div>
-  <div class="about-me-intro">
-    <div class="about-me-context">UIkit offers some advanced components that are not included in the UIkit core framework. Usually you wouldn't use these components in your everyday website. They include stuff like nestables and datepickers, which will come in handy, if you create advanced user interfaces like administration areas.
-    </div>
-  </div>
-  <div class="about-me-detail">
-    <div class="about-me-index">EDUCATION / CAREEAR</div>
-  </div>
-  <div>
-    <div class="about-me-index">SKILL</div>
-  </div>
-</div>
-
-</body>
 
 </html>
