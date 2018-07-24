@@ -19,7 +19,7 @@
 <body>
   <header class="header">
     <div class="header-nav middle-child  clearfix">
-      <div class="hamburgerBar ">
+      <div class="hamburgerBar">
         <img src="images/menu.png" alt="">
       </div>
       <a href="http://pf.kakao.com/_YFgWC/"><div class="nav-friend middle-child  clearfix"><img src="images/friend.png" alt=""></div></a>
@@ -27,13 +27,13 @@
     <nav>
       <ul>
         <li>
-          <a href="#" id="introduction">Introduction</a>
+          <a href="#" id="introTagA">Introduction</a>
         </li>
         <li>
-          <a href="#" id="introductionVideo">Introduction Video</a>
+          <a href="#" id="introVideoTagA">Introduction Video</a>
         </li>
         <li>
-          <a href="#" id="aboutMe">About me</a>
+          <a href="#" id="aboutMeTagA">About me</a>
         </li>
       </ul>
     </nav>
@@ -41,7 +41,7 @@
 
   <div class="content slide-div" >
     <!-- Swiper -->
-    <div class="swiper-container swiper-div">
+    <div class="swiper-container swiper-div" id="introduction">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="slide-div-text">
@@ -81,7 +81,7 @@
     <div class="swiper-pagination swiper-page-div"></div>
   </div>
 
-  <div class="content video-content">
+  <div class="content video-content" id="introductionVideo">
     <div class="video-title">이제 편하게 도서검색하세요</div>
     <div class="video-plus-friend">
       <a href="http://pf.kakao.com/_YFgWC/chat">플러스친구 추가하기</a>
@@ -92,7 +92,7 @@
     </div>
   </div>
 
-  <div class="content" >
+  <div class="content" id="aboutMe" >
     <img src="images/about_me.jpg"  class="uk-border-circle about-me-img"  alt="">
     <div class="about-me-title">ABOUT ME</div>
     <div class="about-me-intro">
@@ -117,11 +117,13 @@
 
 <script>
 
-var introduction =  document.getElementById("introduction")
-var introductionVideo = document.getElementById("introductionVideo")
-var aboutMe = document.getElementById("aboutMe")
+var introTagA =  document.getElementById("introTagA")
+var introVideoTagA = document.getElementById("introVideoTagA")
+var aboutMeTagA = document.getElementById("aboutMeTagA")
+
 var hamburgerBar = document.getElementsByClassName("hamburgerBar");
 var nav =   document.getElementsByTagName("nav");
+
 
 function closeNav() {
   if (nav.classList) {
@@ -129,22 +131,31 @@ function closeNav() {
     nav.classList.toggle("close");
   }
 }
-console.log(nav)
-console.log(introduction)
-console.log(introductionVideo)
-console.log(aboutMe)
-introduction.addEventListener("click", function(){
-    window.scrollTo(0 ,500);
-  closeNav();
 
-});
-introductionVideo.addEventListener("click", function(){
-    window.scrollTo(0, 700);
-  closeNav();
+introTagA.addEventListener("click", function() {
+  $("nav").toggleClass("close");
+  $([document.documentElement, document.body]).animate({
+    scrollTop: 0
+}, 1000);
+})
 
-});
+introVideoTagA.addEventListener("click", function() {
+  $("nav").toggleClass("close");
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $('#introductionVideo').offset().top
+}, 1000);
+})
+
+ aboutMeTagA.addEventListener("click", function() {
+  $("nav").toggleClass("close");
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $('#aboutMe').offset().top
+}, 1000);
+})
+
 
 $(".hamburgerBar").click(function(){
+  $("nav").removeClass("close");
   $("nav").toggleClass("open");
 });
 
